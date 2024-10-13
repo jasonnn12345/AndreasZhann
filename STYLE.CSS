@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+}
+body{
+    /* background-color: lightpink; */
+    /* color: wheat; */
+    box-sizing: border-box;
+    min-height: 300px;
+    overflow: scroll;
+
+}
+  
+.header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    background-color: gray;
+    z-index: 1000;
+}
+.border-container{
+    margin: 0;
+    padding: 18px 15px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+
+   
+}
+
+.border{
+    
+    display: flex;
+    gap: 10px;
+    
+}
+.border a{
+    text-decoration: none;
+    font-variant: small-caps;
+    color: white;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    height: 28px;
+    margin: 2px;
+    width: auto;
+    display: flex;    
+    
+}
+#home-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(image/img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    padding-top: 170px;
+    z-index: -1;
+    filter: blur(30);
+}
+#home-container .home h4 {
+   font-weight: 100;
+    color:black;
+    font-family:  "Pacifico", cursive;;
+    font-size: 2rem;
+    
+}
+#home-container .home h1 {
+    font-weight: 800; 
+    color:black;
+    font-family:  "Sacramento", cursive;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.undangan{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+.undangan .btnU{
+    height: 40px;
+    width: 120px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    background-color: gainsboro;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#time-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background : url(image/bgimg2.jpg);
+    z-index : -1 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#time-container h1{
+    font-weight: 300; 
+    color:pink;
+    font-family:  "Sacramento", cursive;
+    font-size: 5rem;
+    justify-content: center;
+    display: flex;
+    position:static
+
+
+}
+#time-container h2{
+    text-align: start;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: white;
+}
+#time-container p{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#time-container img{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+}
+#time-container button{
+    display: flex;
+    width: 220px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    background-color: plum;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.loc{
+    display: flex;
+    padding-left: 85px;
+}
+#contact-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.top{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+}
+.top .btn{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+@media (min-height : 1024px) {
+    html{
+        display: grid;
+        grid-template-columns: (3,1fr);
+    }
+    
+}
+@media (min-height : 768px) and (max-width : 1023px) {
+    html{
+        grid-template-columns: (2,1fr);
+    }
+    
+}
+@media (max-height : 767px) {
+    html{
+        grid-template-columns: 1fr;
+    }
+    
+}
