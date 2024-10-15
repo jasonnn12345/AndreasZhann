@@ -102,6 +102,13 @@ body{
     text-transform: capitalize;
     cursor: pointer;
 }
+.container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Membuat jarak antar kolom */
+    width: 100%; /* Atur lebar container */
+   gap: 80px;
+}
+
 #time-container{
     min-height: 100vh;
     display: flex;
@@ -113,6 +120,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 #time-container h1{
     font-weight: 300; 
     color:pink;
@@ -129,12 +138,12 @@ body{
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
-    color: white;
+    color: rgb(110, 87, 87);
 }
 #time-container p{
     color: white;
     font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:monospace;
 }
 #time-container img{
     width: 400px;
@@ -157,8 +166,17 @@ body{
 }
 .loc{
     display: flex;
-    padding-left: 85px;
+    margin-left: 85px;
+   
 }
+.times-container .simply-countdown{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+
 #contact-container{
     min-height: 100vh;
     display: flex;
@@ -192,23 +210,25 @@ body{
 
 
 
-
-@media (min-height : 1024px) {
+@media (max-height : 992px) {
     html{
-        display: grid;
-        grid-template-columns: (3,1fr);
+        /* display: grid;
+        grid-template-columns: (3,1fr); */
+        font-size: 80%;
     }
     
 }
-@media (min-height : 768px) and (max-width : 1023px) {
+@media (max-height : 768px) {
     html{
-        grid-template-columns: (2,1fr);
+        /* grid-template-columns: (2,1fr); */
+        font-size: 65%;
     }
     
 }
-@media (max-height : 767px) {
+@media (max-height : 576px) {
     html{
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        font-size: 60%;
     }
     
 }

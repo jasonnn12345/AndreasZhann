@@ -9,8 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>web nikah</title>
  <link rel="stylesheet" href="STYLE.CSS">
+ <!-- countdown -->
+ <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+ <script src="countdown/simplyCountdown.min.js"></script>
 </head>
 <body>
    
@@ -39,32 +42,49 @@
  
 
 <section id="time-container">
-    <div class="time">
+    <div class="row">
 <h1>pernikahan akan di laksanakan di :</h1>
-
-           <h2>Lokasi :</h1>
+<div class="container col-md-3">
+<div class="loc-container">
+           <h2>Lokasi :</h2>
             <p>JW MARIOT</p>
             <P>JL.GATAU NAMA</P>
             <P>RUANGAN 50</P>
             <img src="image/jwma.webp" alt="">
             <div class="loc">
-         <button class="btnL" onclick="keweb()">tap ini untuk menuju maps</button>
-  </div>
+         <button class="btnL" onclick="keweb()">tap ini untuk menuju maps</button></div>
+        </div>
+        
+         <div class="times-container col-md-3">
+           <h2 >Waktu Pernikahan :</h2>
+           <p>Tanggal 24 Desember 2024</p>
+           <p>Pukul 18.00 WIB</p>
+           <div class="simply-countdown"></div>
+        
+         </div>
 </div>
+
 </section>
  
 <section id="contact-container">
     <div class="contact">
-<h4>andreas ganteng</h4>
-<h1>@andreas_ciam</h1>
+<h1>TerimaKasih Sudah Melihat Udangan ini</h1>
+
 </div>
+<div class="quotes">
+    <h4>Kami Ucapkan Terima Kasih Sebelum itu <br>kami akan memberikan kata-kata Penyemangat :P</h4></div>
+<div id="quote" class="quote">//kata-kata kak gem</div>
+<button id="quoteBtn" class="btn">tap ini untuk kata"nya kak gem</button>
+
 </section>
+
 <div class="top">
     <button class="btn" onclick="keAtas()">👆</button>
     <script src="script.js"></script>
 </div>
-<audio autoplay> 
+<!-- <audio autoplay> 
     <source src="sound/uifyp.mp3" type="audio/mp3">
-     </audio>
+     </audio> -->
+
 </body>
 </html>
