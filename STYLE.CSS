@@ -8,7 +8,7 @@
 body{
     /* background-color: lightpink; */
     /* color: wheat; */
-    box-sizing: border-box;
+    
     min-height: 300px;
     overflow: scroll;
 
@@ -23,7 +23,7 @@ body{
     z-index: 1000;
 }
 .border-container{
-    margin: 0;
+    
     padding: 18px 15px;
     justify-content: flex-end;
     align-items: center;
@@ -45,9 +45,8 @@ body{
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
-    height: 28px;
+   
     margin: 2px;
-    width: auto;
     display: flex;    
     
 }
@@ -59,7 +58,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: red;
+    padding-top: 170px;   
     width: 100%;
     height: 100%;
     padding-top: 170px;
@@ -78,7 +77,7 @@ body{
     color:black;
     font-family:  "Sacramento", cursive;
     font-size: 4rem;
-    align-items: center;
+    
     justify-content: center;
     display: flex;
 }
@@ -89,8 +88,6 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    
-
 }
 .undangan .btnU{
     height: 40px;
@@ -108,6 +105,10 @@ body{
     width: 100%; /* Atur lebar container */
    gap: 80px;
 }
+.row{
+    display: flexbox;
+    justify-content: center;
+}
 
 #time-container{
     min-height: 100vh;
@@ -115,30 +116,49 @@ body{
     justify-content: center;
     padding-top: 40px;
     background : url(image/bgimg2.jpg);
-    z-index : -1 ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.loc-container{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.loc{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.loc-img{
+    width: 100%;
+    
+   justify-content: center; 
+    align-items: center; 
+    display: flex;
 }
 
 
 #time-container h1{
     font-weight: 300; 
-    color:pink;
+    color:white;
     font-family:  "Sacramento", cursive;
     font-size: 5rem;
-    justify-content: center;
+    
     display: flex;
-    position:static
+   
 
 
 }
 #time-container h2{
-    text-align: start;
+    /* text-align: start; */
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
-    color: rgb(110, 87, 87);
+    color: lightyellow;
 }
 #time-container p{
     color: white;
@@ -151,6 +171,7 @@ body{
     border-radius: 15px;
     background-size: cover;
 }
+
 #time-container button{
     display: flex;
     width: 220px;
@@ -164,11 +185,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
-.loc{
-    display: flex;
-    margin-left: 85px;
-   
-}
+
 .times-container .simply-countdown{
     justify-content: center;
     align-items: center;
@@ -179,11 +196,45 @@ body{
 
 #contact-container{
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color:wheat;
+    padding-top: 80px ;
+    font-size: 2rem;
+    display: flex;    
 }
+#contact-container .quote{
+    background-color: rgb(210, 218, 101);
+    margin: 5px;
+    border-radius:10px;
+}
+#contact-container .arti{
+    background-color: rgb(210, 218, 101);
+    margin: 5px;
+    border-radius:10px;
+    
+}
+#contact-container #quoteBtn.btnQ{
+    background-color: rgb(145, 151, 57);
+    margin: 5px;
+    border-radius:10px;
+    width: 100px;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display : flexbox;
+    
+}
+.btn-q{
+    width: 100%;
+    
+   justify-content: center; 
+    align-items: center; 
+    display: flex;
+}
+
 .top{
     position: fixed;
     width: 60px;
@@ -222,6 +273,14 @@ body{
     html{
         /* grid-template-columns: (2,1fr); */
         font-size: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .loc-container,.times-container{
+        width: 100%;
+        text-align: center;
+
     }
     
 }
@@ -230,5 +289,9 @@ body{
         /* grid-template-columns: 1fr; */
         font-size: 60%;
     }
-    
+    .loc-container,.times-container{
+        width: 100%;
+        text-align: center;
+
+    }
 }
