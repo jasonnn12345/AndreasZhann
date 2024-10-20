@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet" />
     <title>web nikah</title>
- <link rel="stylesheet" href="STYLE.CSS">
- <!-- countdown -->
- <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
- <script src="countdown/simplyCountdown.min.js"></script>
-</head>
-<body>
-   
+    <link rel="stylesheet" href="STYLE.CSS" />
+    <!-- countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
     <header class="header">
-        <div class="border-container">
-            <div class="border">
-            <a href="#home-container">home</a>
-            <a href="#time-container">location & time</a>
-            <a href="#contact-container">contact us</a> 
-         
-        
+      <div class="border-container">
+        <div class="border">
+          <a href="#home-container">home</a>
+          <a href="#time-container">location & time</a>
+          <a href="#contact-container">contact us</a>
         </div>
-    </div>
-    </header> 
+      </div>
+    </header>
+    <!-- akhir header -->
 
+    <!-- home -->
     <section id="home-container">
-        <div class="home">
-    <h4>Selamat Datang Bapak/Ibu</h4>
-    <h4>Anda Telah di undang untuk mendatangani pernikahan :</h4>
-    <h1 id="pc">Pangeran <br> &<br>Cinderela</h1>
-    <div class="undangan">
-    <button class="btnU" onclick="keTime()">lihat udangan</button>
-</div>
-</div>
-</section>
- 
-
-<section id="time-container">
-    <div class="row">
-<h1>pernikahan akan di laksanakan di :</h1>
-
-<div class="loc-container">
-           <h2>Lokasi :</h2>
-            <p>JW MARIOT</p>
-            <P>JL.GATAU NAMA</P>
-            <P>RUANGAN 50</P>
-            <div class="loc-img"><img src="image/jwma.webp" alt=""></div>
-            <div class="loc">
-         <button class="btnL" onclick="keweb()">tap ini untuk menuju maps</button></div>
+      <div class="home">
+        <h4>Selamat Datang Bapak/Ibu</h4>
+        <h4>Anda Telah di undang untuk mendatangani pernikahan :</h4>
+        <h1 id="pc">
+          Pangeran <br />
+          &<br />Cinderela
+        </h1>
+        <div class="undangan">
+          <button class="btnU" onclick="keTime()">lihat udangan</button>
         </div>
-        
-         <div class="times-container col-md-3">
-           <h2 >Waktu Pernikahan :</h2>
-           <p>Tanggal 24 Desember 2024</p>
-           <p>Pukul 18.00 WIB</p>
-           <div class="simply-countdown"></div>
-        
-         </div>
-</div>
+      </div>
+    </section>
+    <!-- Akhir Home -->
 
-</section>
- 
-<section id="contact-container">
-    <div class="contact">
-<h1>TerimaKasih Sudah Melihat Udangan ini</h1>
+    <!-- Lokasi & Waktu -->
+    <section id="time-container">
+      <h1>pernikahan akan di laksanakan di :</h1>
+      <!-- Lokasi -->
+      <div class="row">
+        <div class="loc-container col-md-6">
+          <h2>Lokasi :</h2>
+          <p>JW MARIOT</p>
+          <p>JL.GATAU NAMA</p>
+          <p>RUANGAN 50</p>
+          <div class="loc-img"><img src="image/jwma.webp" alt="" /></div>
+          <div class="loc">
+            <button class="btnL" onclick="keweb()">tap ini untuk menuju maps</button>
+          </div>
+        </div>
+        <!-- Akhir Lokasi -->
 
+        <!-- Waktu -->
+        <div class="times-container col-md-6">
+          <h2>Waktu Pernikahan :</h2>
+          <p>Tanggal 24 Desember 2024</p>
+          <p>Pukul 18.00 WIB</p>
+          <div class="simply-countdown"></div>
+        </div>
+        <!-- Akhir Waktu -->
+      </div>
+    </section>
+    <!-- Akhir Lokasi Dan Waktu -->
+    <section id="contact-container">
+      <div class="contact">
+        <h1>TerimaKasih Sudah Melihat Udangan ini</h1>
 
-<div class="quotes">
-    <h4>Kami Ucapkan Terima Kasih Sebelum itu <br>kami akan memberikan kata-kata Penyemangat :P</h4></div>
-<div id="quote" class="quote"></div>
-<div id="arti" class="arti"></div>
-<div class="btn-q">
-<button id="quoteBtn" class="btnQ" onclick="generateQuote()">tap ini untuk kata"nya kak gem</button>
-</div></div>
-</section>
+        <div class="quotes">
+          <h4>Kami Ucapkan Terima Kasih Sebelum itu <br />kami akan memberikan kata-kata Penyemangat :P</h4>
+        </div>
+        <div id="quote" class="quote"></div>
+        <div id="arti" class="arti"></div>
+        <div class="btn-q">
+          <button id="quoteBtn" class="btnQ" onclick="generateQuote()">tap ini untuk kata"nya kak gem</button>
+        </div>
+      </div>
+    </section>
 
-<div class="top">
-    <button class="btn" onclick="keAtas()">👆</button>
+    <div class="top">
+      <button class="btn" onclick="keAtas()">👆</button>
+    </div>
     <script src="script.js"></script>
-</div>
-</div>
-
-</body>
+  </body>
 </html>
